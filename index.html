@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="maletin.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Sebastián Utría - Ingeniero Electrónico</title>
+</head>
+
+<body>
+ 
+  <header class="header">
+    <div class="logo-container">
+      <img class="logo" src="foto.png" alt="Mi foto de perfil">
+      <h1 class="logo-name">Sebastián Utría Quiroz</h1>
+    </div>
+    <nav class="menu-principal">
+      <ul class="nav-links">
+        <li><a href="#aboutme">Sobre mí</a></li>
+        <li><a href="#myworks">Proyectos</a></li>
+        <li><a href="#contactme">Contacto</a></li>
+      </ul>
+      <ul class="social-links">
+        <li><a href="#"><img src="face.png" alt="Facebook"></a></li>
+        <li><a href="#"><img src="insta.png" alt="Instagram"></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    
+    <section id="aboutme" class="about-section">
+      <div class="profile-container">
+        <img src="foto.png" alt="Mi foto" class="profile-pic">
+        <div class="name-title">
+          <h2>SEBASTIÁN</h2>
+          <h2>UTRÍA</h2>
+          <h2>QUIROZ</h2>
+        </div>
+        <p class="bio-text">
+          Electronic engineer with experience in design, development and implementation of electronic networks and systems. 
+          Specialized in technical specifications for procurement of industrial equipment, bid analysis and maintenance of electrical 
+          and maintenance of electrical installations and motor controls.
+        </p>
+        <button class="bio-btn" data-bs-toggle="offcanvas" data-bs-target="#bioCanvas">
+          Mi biografía
+        </button>
+        
+       
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="bioCanvas">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title">A little more about me</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+          </div>
+          <div class="offcanvas-body">
+            <h2 class="mb-4">Sebastián Utría Quiroz</h2>
+            <p>I was born on June 10, 1998 in Cartagena, Bolivar. I am an electronic engineer graduated from the 
+              Technological University of Bolivar and systems technician from SENA.</p>
+            <p>I have always been passionate about applying my knowledge to solve real problems. 
+              My technical and university education has given me the tools to contribute to the technological development of my region. 
+              technological development of my region.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+<section id="myworks">
+  <h2 class="title-works">MY PROJECTS</h2>
+  <div class="works-container">
+    <div class="card1">
+      <img class="logoglpi" src="glpi.png" alt="GLPI LOGO">
+      <h3 class="titlecard1">GLPI</h3>
+      <p class="textcard1">Implementation of the GLPI tool for maintenance management in my job</p>
+    </div>
+    <div class="card2">
+      <img class="logobattery" src="battery.png" alt="Logo empresa">
+      <h3 class="titlecard2">55Ah Battery Design</h3>
+      <p class="textcard2">Creation and assembly of a 55,000 milliamp-hour battery from recycled 18650 cells</p>
+    </div>
+  </div>
+</section>
+
+<section id="contactme" class="contact-section">
+  <div class="contact-container">
+    <h2>CONTACT ME</h2>
+    <p>¿Tienes un proyecto en mente o quieres colaborar? Estoy disponible para oportunidades de trabajo y consultoría.</p>
+    
+    <form class="contact-form">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" >
+      </div>
+      
+      <div class="form-group">
+        <label for="phone">Cellphone Number:</label>
+        <input type="tel" id="phone" name="phone" >
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" >
+      </div>
+      
+      <div class="form-group">
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="comment" rows="4" ></textarea>
+      </div>
+      
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+  </div>
+</section>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="formulario.js"></script>
+</body>
+</html>
